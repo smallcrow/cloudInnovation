@@ -1,3 +1,30 @@
-<div>
-	hello rendered !!! {{isRegisted}}
+<div id="Container">
+	<div class="row">
+		<div class="panel panel-danger">
+	        <div class="panel-heading">
+	           <h4>Add Agents</h4>
+	        </div>
+	        <div class="panel-body">
+	           <form ng-submit="addAgents()">
+				<input type="text" placeholder="agent to add" ng-model="agentToAdd"/>
+				<input type="submit" value="add" />
+			</form>
+	        </div>
+ 		</div>
+	</div>
+	</br>
+	<div class="row">
+		<div class="panel panel-danger" ng-hide="listAgents().length == 0">
+	        <div class="panel-heading">
+	           <h4>List of Agents</h4>
+	        </div>
+	        <div class="panel-body">
+	           <ul>
+					<li ng-repeat="agent in listAgents()">
+						Agent: {{agent}} </br>
+					</li>
+				</ul>
+	        </div>
+	 	</div>
+	</div>
 </div>
