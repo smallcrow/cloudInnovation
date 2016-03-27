@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.css"> -->
+    <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    
+    <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bower_components/angular/angular.min.js"></script>
+    <script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+           
+    <script type="text/javascript"> 
+    </script>
+    
+    
+    <!-- app -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+    <!-- Controllers -->
+    <script src="app/controllers/agentRegistrationCtrl.js"></script>
+    <!-- Directives -->
+    <!-- Services -->
+
+</head>
+<body id="idHtml_DashboardPanel">
+     <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            IR Prognosis
+          </a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" >Sign In</a></li>
+            <li><a href="#" >Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div ng-app="AgentRegistration" class="my-app">
+        <div ng-controller="AgentRegistrationCtrl">
+            <div ng-view></div>
+        </div>
+    </div>
+</body>
+</html>

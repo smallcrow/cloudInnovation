@@ -1,0 +1,19 @@
+{
+  "name": "spa-easydietdiary",
+  "version": "1.0.0",
+  "description": "to build my own application, first i need to mimic some other pp's applciation",
+  "main": "authenticationService.js",
+  "scripts": {
+    "start": "node authenticationService.js",
+    "test": "node node_modules/mocha/bin/mocha --recursive tests/",
+    "cover": "node node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha -- -R spec --recursive tests/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "carolh",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
